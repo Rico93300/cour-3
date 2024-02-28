@@ -38,11 +38,21 @@
             <li class="nav-item">
                 <a class="nav-link" href="/product-create">creation</a>
             </li>
+
+            <?php if(!isset($_SESSION['user'])){ ?>
             <li class="nav-item">
                 <a class="nav-link" href="/register">Registre</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/Admin">Admin</a>
+
+            <?php }else{?>
+                <li class="nav-item">
+                <a class="nav-link" href="/logout">logout</a>
             </li>
+            <?php if($_SESSION['user']['admin']==true){ ?>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            <?php }
+            } ?>
         </ul>
     </nav>

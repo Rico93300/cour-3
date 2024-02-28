@@ -1,6 +1,6 @@
 <?php
 $title= "cration de produit";
-require_once(__DIR__ . "/partials/head.php") ?>
+require_once(__DIR__ . "/../partials/head.php") ?>
 ?>
 <h1>  create produit</h1>
  <form action="/product-create" method="post">
@@ -20,4 +20,4 @@ require_once(__DIR__ . "/partials/head.php") ?>
 <button type="submit"> create</button>
 </form>
 
-<?php require_once(__DIR__ . "/partials/footer.php") ?>
+<?php require_once(__DIR__ . "/../partials/footer.php") ?>

@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "/../../config/db.php");
+
 
 
 if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['price']) && $_POST['price'] > 0 && strlen($_POST['title']) > 2) {
@@ -21,8 +21,6 @@ if (isset($_POST['title']) && isset($_POST['description']) && isset($_POST['pric
     // je rederige l'utilisateur vers la page product pour qu'il vois le nouveau produit
     header('Location: /product');
     exit();
-} else {
-    echo "erreur";
-}
+} 
 
-require_once(__DIR__ . "/../views/productCreate.view.php");
+require_once(__DIR__ . "/../views/product/productCreate.view.php");

@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . "/../../config/db.php");
+
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -18,4 +18,4 @@ if (isset($_GET['id'])) {
     require_once(__DIR__ . "/404.php");
         exit; 
 }
-require_once(__DIR__ . "/../views/productRead.view.php");
+require_once(__DIR__ . "/../views/product/productRead.view.php");

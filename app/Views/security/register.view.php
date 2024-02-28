@@ -1,6 +1,6 @@
 <?php
 $title = "Regitre";
-require_once(__DIR__ . "/partials/head.php") ?>
+require_once(__DIR__ . "/../partials/head.php") ?>
 <h1>Page enregistrement</h1>
 <form action="/register" method="POST">
     <div>
@@ -29,4 +29,4 @@ require_once(__DIR__ . "/partials/head.php") ?>
  }
 
 
-require_once(__DIR__ . "/partials/footer.php") ?>
+require_once(__DIR__ . "/../partials/footer.php") ?>

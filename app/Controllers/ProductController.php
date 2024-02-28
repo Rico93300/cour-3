@@ -1,6 +1,6 @@
 <?php 
 
-require_once(__DIR__ . "/../../config/db.php");
+
 
 
 // j'ecris ma requete sql que je met dans une variable
@@ -16,5 +16,5 @@ $products=$productstatement->fetchAll();
 // var_dump($products);
 // echo"<pre>";
 
-require_once(__DIR__ . "/../views/product.view.php");
+require_once(__DIR__ . "/../views/product/product.view.php");
 ?>

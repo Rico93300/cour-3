@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ . "/../../config/db.php");
+
 
 
 
@@ -41,8 +41,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
             $userStatement->bindParam(':email', $email);
             $userStatement->bindParam(':password', $password);
             $userStatement->execute();
-            header('Location: /login');
-            exit();
+            redirectToRoute('/login');
         } else {
             $error = "- at least 8 characters <br>
             - at least one character in uppercase <br>
@@ -57,4 +56,4 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
 
 
 
-require_once(__DIR__ . "/../views/register.view.php");
+require_once(__DIR__ . "/../views/security/register.view.php");
