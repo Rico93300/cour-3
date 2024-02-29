@@ -13,11 +13,12 @@ $routes = [
     '/product' => 'ProductController.php',
     '/product-create' => 'ProductCreateController.php',
     '/product-read' => 'ProductReadController.php',
+    '/product-update' => 'ProductUpdateController.php',
     '/product-delete' => 'ProductDeleteController.php',
     '/admin' => 'AdminController.php',
     '/admin-update' => 'AdminUpdateController.php',
     '/admin-delete' => 'AdminDeleteController.php',
-    '/product-update' => 'ProductUpdateController.php',
+   
 
 ];
 $secureRoutes = [

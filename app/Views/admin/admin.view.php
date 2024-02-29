@@ -2,7 +2,7 @@
 $title= "admin";
 require_once(__DIR__ . "/../partials/head.php") ?>
 
-<h1> dmin</h1>
+<h1> Admin</h1>
 
 <ul>
 

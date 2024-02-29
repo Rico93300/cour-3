@@ -21,3 +21,11 @@ function redirectToRoute($route)
     header("Location: {$route}");
     exit;
 }
+
+function getUsers($users)
+{
+    foreach ($users as $user) {
+        echo "Nom: " . $user['name'] . "<br>";
+        echo "Email: " . $user['email'] . "<br>"; 
+    }
+}
